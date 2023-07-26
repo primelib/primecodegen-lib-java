@@ -21,8 +21,8 @@ import java.util.function.Consumer;
 @NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
 @Slf4j
 public class ProxySpec {
-    /*
-     * Only HTTP(S) proxies are supported due to library limitations
+    /**
+     * The type of the proxy server
      */
     @NotNull
     private Proxy.Type type = Proxy.Type.HTTP;
