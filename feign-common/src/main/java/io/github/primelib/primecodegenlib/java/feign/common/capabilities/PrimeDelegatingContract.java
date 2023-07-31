@@ -1,4 +1,4 @@
-package io.github.primelib.primecodegenlib.java.feign.resilience4j;
+package io.github.primelib.primecodegenlib.java.feign.common.capabilities;
 
 import feign.Contract;
 import feign.MethodMetadata;
@@ -14,11 +14,11 @@ import java.util.concurrent.CompletableFuture;
  * Delegates to the original contract, but replaces the return type for wrapped response types (e.g. {@link CompletableFuture}).
  */
 @ApiStatus.Internal
-public class Resilience4DelegatingContract implements Contract {
+public class PrimeDelegatingContract implements Contract {
 
     private final Contract delegate;
 
-    public Resilience4DelegatingContract(Contract delegate) {
+    public PrimeDelegatingContract(Contract delegate) {
         this.delegate = delegate;
     }
 

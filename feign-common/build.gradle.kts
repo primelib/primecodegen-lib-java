@@ -9,9 +9,15 @@ projectConfiguration {
 }
 
 dependencies {
+    // modules
+    api(project(":common"))
+
     // annotations
     implementation("org.jetbrains:annotations:24.0.1")
 
     // feign
     api("io.github.openfeign:feign-core")
+
+    // jackson
+    compileOnly("com.fasterxml.jackson.core:jackson-databind")
 }

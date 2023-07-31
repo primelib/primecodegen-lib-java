@@ -56,6 +56,7 @@ subprojects {
             // bom
             add("api", platform("io.github.openfeign:feign-bom:12.4"))
             add("api", platform("io.github.resilience4j:resilience4j-bom:2.1.0"))
+            add("api", platform("com.fasterxml.jackson:jackson-bom:2.15.2"))
         }
     }
 }

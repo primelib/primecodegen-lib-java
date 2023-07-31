@@ -9,6 +9,9 @@ projectConfiguration {
 }
 
 dependencies {
+	// modules
+	api(project(":feign-common"))
+
 	// annotations
 	implementation("org.jetbrains:annotations:24.0.1")
 
@@ -17,5 +20,9 @@ dependencies {
 
 	// resilience4J
 	api("io.github.resilience4j:resilience4j-core")
-	api("io.github.resilience4j:resilience4j-feign")
+	api("io.github.resilience4j:resilience4j-retry")
+	api("io.github.resilience4j:resilience4j-bulkhead")
+	api("io.github.resilience4j:resilience4j-ratelimiter")
+	api("io.github.resilience4j:resilience4j-circuitbreaker")
+	api("io.github.resilience4j:resilience4j-micrometer")
 }
